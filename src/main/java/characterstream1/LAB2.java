@@ -1,4 +1,4 @@
-package characterstream3;
+package characterstream1;
 
 
 public class LAB2 {

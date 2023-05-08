@@ -1,4 +1,4 @@
-package characterstream3;
+package characterstream1;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

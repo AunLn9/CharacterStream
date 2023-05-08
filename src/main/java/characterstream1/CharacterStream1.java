@@ -1,4 +1,4 @@
-package characterstream3;
+package characterstream1;
 
 import java.io.*;
 import java.util.logging.Level;
@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 // อ่าน-เขียนข้อมูลทั้งไฟล์เอามาเก็บไว้ลงใน Buffer (หน่วนความจำชั่วคราวสร้างขึ้นใน memory)
 // BufferedReader : อ่านทีละบรรทัด
 // BufferedWriter : แต่เขียนทีละบรรทัดไม่ได้
-public class CharacterStream3 {
+public class CharacterStream1 {
     public static void main(String[] args) {
         try {
             FileWriter file = new FileWriter("data.txt");
@@ -17,7 +17,7 @@ public class CharacterStream3 {
             output.write("Welcome to JAVA");
             output.close();
         } catch (IOException ex) {
-            Logger.getLogger(CharacterStream3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CharacterStream1.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         try {
@@ -28,9 +28,9 @@ public class CharacterStream3 {
                 System.out.println(s);
             }
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(CharacterStream3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CharacterStream1.class.getName()).log(Level.SEVERE, null, ex);
         }catch (IOException ex) {
-            Logger.getLogger(CharacterStream3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CharacterStream1.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
